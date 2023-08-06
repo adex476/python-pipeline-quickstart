@@ -16,8 +16,8 @@ steps:
     script: |
       print('Hello world 1')
       print('Hello world 2')
-    versionSpec: '$(python.version)'
-  displayName: 'Use Python $(python.version)'
+    versionSpec: '3.8'
+  displayName: 'Use Python 3.8'
 
 - script: |
     python -m pip install --upgrade pip
@@ -28,3 +28,5 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+  
+- script: python src/example.py
