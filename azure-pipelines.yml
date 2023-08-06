@@ -29,4 +29,4 @@ steps:
     pytest
   displayName: 'pytest'
   
-- script: python src/example.py
+- script: python src/EPL_Data.py
